@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Box icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>About Us - E-commerce</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf4f4;
+            color: #333;
+        }
+       
+        h1, h2, h3 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            line-height: 1.8;
+            margin: 10px 0;
+            text-align: justify;
+        }
+        .stats-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .stat {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            background: #f3f3f3;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .stat h3 {
+            color: #4CAF50;
+            font-size: 36px;
+        }
+        .stat p {
+            margin-top: 10px;
+        }
+        .video-section {
+            margin: 40px 0;
+            text-align: center;
+        }
+        .video-section video {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .testimonials-section {
+            margin: 40px 0;
+        }
+        .testimonial {
+            margin: 20px 0;
+            text-align: center;
+            padding: 20px;
+            background: #f3f3f3;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .testimonial h4 {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .sustainability-section {
+            margin: 40px 0;
+            text-align: center;
+        }
+        .sustainability-section h2 {
+            margin-bottom: 20px;
+        }
+        .sustainability-icons {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .icon-box {
+            justify-items: auto;
+            padding: 5px;
+            border-radius: 8px;
+            background: #f3f3f3;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            width: 150px;
+        }
+        .icon-box img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+       <!-- Header -->
+   <header class="header" id="header">
+    <!-- Top Nav -->
+    <div class="top-nav">
+      <div class="container d-flex">
+        <p>Order Online Or Call Us: (001) 2222-55555</p>
+        <ul class="d-flex">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="nav-center container d-flex">
+      <a href="/" class="logo"><h1>a-CLOTHS-z</h1></a>
+
+        <ul class="nav-list d-flex">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="product.html" class="nav-link">Shop</a>
+          </li>
+          <li class="nav-item">
+          <a href="terms.html" class="nav-link">Terms</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="icons d-flex">
+          <a href="signup.html" class="icon">
+            <i class="bx bx-user"></i>
+          </a>
+          <div class="icon">
+            <i class="bx bx-search"></i>
+          </div>
+          <div class="icon">
+            <i class="bx bx-heart"></i>
+            <span class="d-flex">0</span>
+          </div>
+          <a href="cart.html" class="icon">
+            <i class="bx bx-cart"></i>
+            <span class="d-flex">0</span>
+          </a>
+        </li>
+        </ul>
+
+        <div class="icons d-flex">>
+          <a href="signup.html" class="icon">
+            <i class="bx bx-user"></i>
+          </a>
+          <div class="icon">
+            <i class="bx bx-search"></i>
+          </div>
+          <div class="icon">
+            <i class="bx bx-heart"></i>
+            <span class="d-flex">0</span>
+          </div>
+          <a href="cart.html" class="icon">
+            <i class="bx bx-cart"></i>
+            <span class="d-flex">0</span>
+          </a>
+        </div>
+
+        <div class="hamburger">
+          <i class="bx bx-menu-alt-left"></i>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <!-- Company Overview -->
+        <section class="about-section">
+            <h2>Welcome to <span style="color:#4CAF50;">Your E-Commerce</span></h2>
+            <p>
+                At <strong>Your E-Commerce</strong>, we aim to provide a seamless and delightful online shopping experience. 
+                From unique products to outstanding customer service, we strive to exceed expectations every day.
+            </p>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stat">
+                <h3>1M+</h3>
+                <p>Happy Customers</p>
+            </div>
+            <div class="stat">
+                <h3>10K+</h3>
+                <p>Products Available</p>
+            </div>
+            <div class="stat">
+                <h3>50+</h3>
+                <p>Countries Served</p>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section">
+            <h2>Our Story in Video</h2>
+            <iframe width="660" height="415" src="https://www.youtube.com/embed/wf4F2-9UXUo?si=ra9Q5QV2gxSotCe5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"This platform has changed the way I shop! Exceptional service and quality."</p>
+                <h4>- Jane Doe</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Fast delivery, great prices, and an amazing collection. Highly recommended!"</p>
+                <h4>- John Smith</h4>
+            </div>
+        </section>
+
+        <!-- Sustainability Section -->
+        <section class="sustainability-section">
+            <h2>Our Commitment to Sustainability</h2>
+            <div class="sustainability-icons">
+                <div class="icon-box">
+                    <img src="https://img.freepik.com/premium-vector/eco-friendly-packaging-concept-activist-volunteer-sustainable-zero-waste-lifestyle-recycling-reuse-man-care-about-nature-ecology-cartoon-flat-vector-illustration_118813-16687.jpg" alt="Eco-Friendly">
+                    <p>Eco-Friendly Packaging</p>
+                </div>
+                <div class="icon-box">
+                    <img src="https://designtemplate.tech/Renewable-Energy-Technician-Character-Design-Art-Illustration-700.webp" alt="Renewable Energy">
+                    <p>Powered by Renewable Energy</p>
+                </div>
+                <div class="icon-box">
+                    <img src="https://img.freepik.com/premium-vector/people-urban-park-recycling-waste-illustration-man-woman-hold-placards-with-recycle-sign_94753-2299.jpg" alt="Recycling">
+                    <p>Promoting Recycling</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="row">
+          <div class="col d-flex">
+            <h4>INFORMATION</h4>
+            <a href="">About us</a>
+            <a href="">Contact Us</a>
+            <a href="">Term & Conditions</a>
+            <a href="">Shipping Guide</a>
+          </div>
+          <div class="col d-flex">
+            <h4>USEFUL LINK</h4>
+            <a href="">Online Store</a>
+            <a href="">Customer Services</a>
+            <a href="">Promotion</a>
+            <a href="">Top Brands</a>
+          </div>
+          <div class="col d-flex">
+            <span><a href="#"><i class="bx bxl-facebook-square"></i></a></span>
+            <span><a href="#"><i class="bx bxl-instagram-alt"></i></a></span>
+            <span><a href="#"><i class="bx bxl-github"></i></a></span>
+            <span><a href="#"><i class="bx bxl-twitter"></i></a></span>
+            <span><a href="#"><i class="bx bxl-pinterest"></i></a></span>
+          </div>
+        </div>
+      </footer>
+  
+      <!-- Custom Script -->
+      <script src="./js/index.js"></script>
+</body>
+</html>

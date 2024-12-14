@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Box icons -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+   />
+   <!-- Custom StyleSheet -->
+   <link rel="stylesheet" href="./css/styles.css" />
+    <title>Terms & Conditions</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        .table-of-contents {
+            position: fixed;
+            top: 100px;
+            left: 20px;
+            width: 200px;
+            background: #f3f3f3;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            z-index: 1000;
+        }
+        .table-of-contents h3 {
+            margin-bottom: 15px;
+            font-size: 16px;
+            text-align: center;
+            color: #4CAF50;
+        }
+        .table-of-contents ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .table-of-contents ul li {
+            margin: 10px 0;
+        }
+        .table-of-contents ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+        .table-of-contents ul li a:hover {
+            color: #4CAF50;
+        }
+        .terms-section {
+            margin: 30px 0;
+            padding-left: 240px;
+        }
+        .terms-section h3 {
+            background: #f3f3f3;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .terms-content {
+            display: none;
+            padding: 15px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+    </style>
+    <script>
+        // JavaScript for toggling collapsible sections
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggles = document.querySelectorAll('.terms-section h3');
+            toggles.forEach(toggle => {
+                toggle.addEventListener('click', function () {
+                    const content = this.nextElementSibling;
+                    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+     <!-- Header -->
+   <header class="header" id="header">
+    <!-- Top Nav -->
+    <div class="top-nav">
+      <div class="container d-flex">
+        <p>Order Online Or Call Us: (001) 2222-55555</p>
+        <ul class="d-flex">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="nav-center container d-flex">
+      <a href="/" class="logo"><h1>a-CLOTHS-z</h1></a>
+
+        <ul class="nav-list d-flex">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="product.html" class="nav-link">Shop</a>
+          </li>
+          <li class="nav-item">
+          <a href="terms.html" class="nav-link">Terms</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="icons d-flex">
+          <a href="signup.html" class="icon">
+            <i class="bx bx-user"></i>
+          </a>
+          <div class="icon">
+            <i class="bx bx-search"></i>
+          </div>
+          <div class="icon">
+            <i class="bx bx-heart"></i>
+            <span class="d-flex">0</span>
+          </div>
+          <a href="cart.html" class="icon">
+            <i class="bx bx-cart"></i>
+            <span class="d-flex">0</span>
+          </a>
+        </li>
+        </ul>
+
+        <div class="icons d-flex">
+          <a href="signup.html" class="icon">
+            <i class="bx bx-user"></i>
+          </a>
+          <div class="icon">
+            <i class="bx bx-search"></i>
+          </div>
+          <div class="icon">
+            <i class="bx bx-heart"></i>
+            <span class="d-flex">0</span>
+          </div>
+          <a href="cart.html" class="icon">
+            <i class="bx bx-cart"></i>
+            <span class="d-flex">0</span>
+          </a>
+        </div>
+
+        <div class="hamburger">
+          <i class="bx bx-menu-alt-left"></i>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <!-- Table of Contents -->
+        <div class="table-of-contents">
+            <h3>Contents</h3>
+            <ul>
+                <li><a href="#section1">1. Introduction</a></li>
+                <li><a href="#section2">2. User Obligations</a></li>
+                <li><a href="#section3">3. Payment Terms</a></li>
+                <li><a href="#section4">4. Return & Refund Policy</a></li>
+                <li><a href="#section5">5. Privacy Policy</a></li>
+                <li><a href="#section6">6. Limitation of Liability</a></li>
+                <li><a href="#section7">7. Termination of Service</a></li>
+                <li><a href="#section8">8. Contact Information</a></li>
+            </ul>
+        </div>
+
+        <!-- Terms Sections -->
+        <div class="terms-section" id="section1">
+            <h3>1. Introduction</h3>
+            <div class="terms-content">
+                <p>Welcome to Your E-Commerce! These Terms & Conditions govern your use of our website and services. By accessing or using our platform, you agree to comply with these terms.</p>
+            </div>
+        </div>
+
+        <div class="terms-section" id="section2">
+            <h3>2. User Obligations</h3>
+            <div class="terms-content">
+                <p>Users are required to provide accurate and up-to-date information. Misrepresentation of identity, fraudulent activities, or illegal use of the platform is strictly prohibited.</p>
+            </div>
+        </div>
+
+        <div class="terms-section" id="section3">
+            <h3>3. Payment Terms</h3>
+            <div class="terms-content">
+                <p>Payments must be completed using our supported methods. Users are responsible for ensuring sufficient funds for transactions. Unauthorized use of payment methods may result in account suspension.</p>
+            </div>
+        </div>
+
+        <div class="terms-section" id="section4">
+            <h3>4. Return & Refund Policy</h3>
+            <div class="terms-content">
+                <p>We offer returns and refunds for eligible products. Users must initiate requests within the specified time frame and comply with our return procedures.</p>
+            </div>
+        </div>
+
+        <div class="terms-section" id="section5">
+            <h3>5. Privacy Policy</h3>
+            <div class="terms-content">
+                <p>Your privacy is important to us. Personal data collected is used to improve services and is handled in accordance with our Privacy Policy.</p>
+            </div>
+        </div>
+
+        <div class="terms-section" id="section6">
+            <h3>6. Limitation of Liability</h3>
+            <div class="terms-content">
+                <p>We are not responsible for damages arising from the use or inability to use our platform, including, but not limited to, lost data or revenue.</p>
+            </div>
+        </div>
+
+        <div class="terms-section" id="section7">
+            <h3>7. Termination of Service</h3>
+            <div class="terms-content">
+                <p>We reserve the right to terminate or suspend user accounts for violations of these terms or misuse of our platform.</p>
+            </div>
+        </div>
+
+        <div class="terms-section" id="section8">
+            <h3>8. Contact Information</h3>
+            <div class="terms-content">
+                <p>If you have questions about these Terms & Conditions, contact us at support@ecommerce.com.</p>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+     <footer class="footer">
+        <div class="row">
+          <div class="col d-flex">
+            <h4>INFORMATION</h4>
+            <a href="">About us</a>
+            <a href="">Contact Us</a>
+            <a href="">Term & Conditions</a>
+            <a href="">Shipping Guide</a>
+          </div>
+          <div class="col d-flex">
+            <h4>USEFUL LINK</h4>
+            <a href="">Online Store</a>
+            <a href="">Customer Services</a>
+            <a href="">Promotion</a>
+            <a href="">Top Brands</a>
+          </div>
+          <div class="col d-flex">
+            <span><a href="#"><i class="bx bxl-facebook-square"></i></a></span>
+            <span><a href="#"><i class="bx bxl-instagram-alt"></i></a></span>
+            <span><a href="#"><i class="bx bxl-github"></i></a></span>
+            <span><a href="#"><i class="bx bxl-twitter"></i></a></span>
+            <span><a href="#"><i class="bx bxl-pinterest"></i></a></span>
+          </div>
+        </div>
+      </footer>
+  
+      <!-- Custom Script -->
+      <script src="./js/index.js"></script>
+</body>
+</body>
+</html>

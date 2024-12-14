@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Box icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Contact Us - E-commerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .contact-form, .contact-details, .map {
+            margin-bottom: 30px;
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            resize: none;
+            height: 120px;
+        }
+        .form-group button {
+            background-color: #6cbe02;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #6cbe02;
+        }
+        .contact-details ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .contact-details ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .map iframe {
+            width: 100%;
+            border: 0;
+            border-radius: 8px;
+        }
+        
+    </style>
+</head>
+<body>
+   <!-- Header -->
+   <header class="header" id="header">
+    <!-- Top Nav -->
+    <div class="top-nav">
+      <div class="container d-flex">
+        <p>Order Online Or Call Us: (001) 2222-55555</p>
+        <ul class="d-flex">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="nav-center container d-flex">
+      <a href="/" class="logo"><h1>a-CLOTHS-z</h1></a>
+
+        <ul class="nav-list d-flex">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="product.html" class="nav-link">Shop</a>
+          </li>
+          <li class="nav-item">
+          <a href="terms.html" class="nav-link">Terms</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="icons d-flex">
+          <a href="signup.html" class="icon">
+            <i class="bx bx-user"></i>
+          </a>
+          <div class="icon">
+            <i class="bx bx-search"></i>
+          </div>
+          <div class="icon">
+            <i class="bx bx-heart"></i>
+            <span class="d-flex">0</span>
+          </div>
+          <a href="cart.html" class="icon">
+            <i class="bx bx-cart"></i>
+            <span class="d-flex">0</span>
+          </a>
+        </li>
+        </ul>
+
+        <div class="icons d-flex">
+          <a href="signup.html" class="icon">
+            <i class="bx bx-user"></i>
+          </a>
+          <div class="icon">
+            <i class="bx bx-search"></i>
+          </div>
+          <div class="icon">
+            <i class="bx bx-heart"></i>
+            <span class="d-flex">0</span>
+          </div>
+          <a href="cart.html" class="icon">
+            <i class="bx bx-cart"></i>
+            <span class="d-flex">0</span>
+          </a>
+        </div>
+
+        <div class="hamburger">
+          <i class="bx bx-menu-alt-left"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <!-- Contact Form Section -->
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="/submit-contact-form" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Contact Details Section -->
+        <div class="contact-details">
+            <h2>Our Contact Details</h2>
+            <ul>
+                <li><strong>Phone:</strong> +1 123-456-7890</li>
+                <li><strong>Email:</strong> support@ecommerce.com</li>
+                <li><strong>Address:</strong> 123 E-commerce Street, Shopping City, USA</li>
+            </ul>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map">
+            <h2>Find Us Here</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789!2d-122.41941648469222!3d37.77492927975981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064b9b12345%3A0xc8b234567890!2sYour+Business!5e0!3m2!1sen!2sus!4v1234567890123"
+                allowfullscreen=""
+                loading="lazy"
+            ></iframe>
+        </div>
+    </div>
+     <!-- Footer -->
+     <footer class="footer">
+        <div class="row">
+          <div class="col d-flex">
+            <h4>INFORMATION</h4>
+            <a href="">About us</a>
+            <a href="">Contact Us</a>
+            <a href="">Term & Conditions</a>
+            <a href="">Shipping Guide</a>
+          </div>
+          <div class="col d-flex">
+            <h4>USEFUL LINK</h4>
+            <a href="">Online Store</a>
+            <a href="">Customer Services</a>
+            <a href="">Promotion</a>
+            <a href="">Top Brands</a>
+          </div>
+          <div class="col d-flex">
+            <span><a href="#"><i class="bx bxl-facebook-square"></i></a></span>
+            <span><a href="#"><i class="bx bxl-instagram-alt"></i></a></span>
+            <span><a href="#"><i class="bx bxl-github"></i></a></span>
+            <span><a href="#"><i class="bx bxl-twitter"></i></a></span>
+            <span><a href="#"><i class="bx bxl-pinterest"></i></a></span>
+          </div>
+        </div>
+      </footer>
+  
+      <!-- Custom Script -->
+      <script src="./js/index.js"></script>
+    </body>
+</html>
